@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sai Dyers</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: white;
-        }
-         .sheet{
-    position:relative;
-    width:297mm;
-    height:210mm;
-    margin:0 auto;
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:stretch;
-    box-sizing:border-box;
-    padding:0;
+  <title>Sai Dyers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: white;
+    }
+     .sheet{
+  position:relative;
+  width:297mm;
+  height:210mm;
+  margin:0 auto;
+  background:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:stretch;
+  box-sizing:border-box;
+  padding:0;
 }
 
 @media print{
@@ -27,140 +27,140 @@
 
 
 .sheet::before{
-    content:"";
-    position:absolute;
-    left:50%;
-    top:6mm;
-    bottom:6mm;
-    border-left:1px dashed #777;
-    transform:translateX(-50%);
-    pointer-events:none;
-    z-index:1000;
+  content:"";
+  position:absolute;
+  left:50%;
+  top:6mm;
+  bottom:6mm;
+  border-left:1px dashed #777;
+  transform:translateX(-50%);
+  pointer-events:none;
+  z-index:1000;
 }
 
  .page{
-    width:148.5mm;
-    height:210mm;
-    background:white;
-    padding:8.5mm;
-    box-sizing:border-box;
-    overflow:visible;
+  width:148.5mm;
+  height:210mm;
+  background:white;
+  padding:8.5mm;
+  box-sizing:border-box;
+  overflow:visible;
 }
-        .header {position:relative;height:24px;}
-        .ganesha {position:absolute;left:50%;transform:translateX(-50%);top:0;font-size: 11px;white-space:nowrap;}
-        .contact {position:absolute;right:0;top:0;text-align:right;font-size: 11px;line-height:1.15;}
-        .title {
-            text-align: center;
-            margin-top: 10px;
-        }
-        .title h1 {
-            margin: 0;
-            font-size: 30px;
-        }
-        .subtitle {
-            text-align: center;
-            font-size: 13px;
-        }
-        .info {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
-        .info-field {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            font-size: 13px;
-            white-space: nowrap;
-        }
-        .info-field input {
-            max-width: 150px;
-            border: none;
-            border-bottom: 1px solid black;
-            text-align: center;
-        }
-        
-table {
-            width:100%;
-            border-collapse:collapse;
-            border-spacing:0;
-            table-layout:fixed;
-            margin-top:10px;
-        }
-        col.sr{width:8%;}
-        col.item{width:56%;}
-        col.qty{width:10%;}
-        col.rate{width:10%;}
-        col.amount{width:16%;}
-
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 4px;
-            text-align: center;
-            box-sizing:border-box;
-        }
-        input[type="text"], input[type="tel"] {
-            width: calc(100% - 6px);
-            border:none;
-            margin:0;
-            padding:2px 3px;
-            background:transparent;
-            box-sizing:border-box;
-            text-align:center;
-        }
-        .signature {
-            text-align: center;
-            vertical-align: bottom;
-            padding-top: 0;
-            font-size: 9.5px;
-            line-height: 1.15;
-            font-family: Arial, sans-serif;
-            font-weight: normal;
-        }
-        .buttons {
-            text-align: center;
-            margin-top: 200px;
-        }
-        @page {
-                size: A4 landscape;
-                margin: 0;
-            }
-
-        @media print {
-            *{
-                -webkit-print-color-adjust:exact;
-                print-color-adjust:exact;
-            }
-            table,tr,td,th{
-                break-inside:avoid;
-                page-break-inside:avoid;
-            }
-            .buttons {
-                display: none;
-            }
-            body {
-                background: white;
-                margin:0;
-            }
-            .sheet{
-                width:297mm;
-                height:210mm;
-                margin:0;
-                padding:0;
-                box-sizing:border-box;
-            }
-            .page{
-                width:148.5mm;
-                height:210mm;
-                margin:0;
-                box-shadow:none;
-                overflow:visible;
-                page-break-after:avoid;
-            }
-        }
+    .header {position:relative;height:24px;}
+    .ganesha {position:absolute;left:50%;transform:translateX(-50%);top:0;font-size: 11px;white-space:nowrap;}
+    .contact {position:absolute;right:0;top:0;text-align:right;font-size: 11px;line-height:1.15;}
+    .title {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .title h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 13px;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .info-field {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    .info-field input {
+      max-width: 150px;
+      border: none;
+      border-bottom: 1px solid black;
+      text-align: center;
+    }
     
+table {
+      width:100%;
+      border-collapse:collapse;
+      border-spacing:0;
+      table-layout:fixed;
+      margin-top:10px;
+    }
+    col.sr{width:8%;}
+    col.item{width:56%;}
+    col.qty{width:10%;}
+    col.rate{width:10%;}
+    col.amount{width:16%;}
+
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 4px;
+      text-align: center;
+      box-sizing:border-box;
+    }
+    input[type="text"], input[type="tel"] {
+      width: calc(100% - 6px);
+      border:none;
+      margin:0;
+      padding:2px 3px;
+      background:transparent;
+      box-sizing:border-box;
+      text-align:center;
+    }
+    .signature {
+      text-align: center;
+      vertical-align: bottom;
+      padding-top: 0;
+      font-size: 9.5px;
+      line-height: 1.15;
+      font-family: Arial, sans-serif;
+      font-weight: normal;
+    }
+    .buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+    @page {
+        size: A4 landscape;
+        margin: 0;
+      }
+
+    @media print {
+      *{
+        -webkit-print-color-adjust:exact;
+        print-color-adjust:exact;
+      }
+      table,tr,td,th{
+        break-inside:avoid;
+        page-break-inside:avoid;
+      }
+      .buttons {
+        display: none;
+      }
+      body {
+        background: white;
+        margin:0;
+      }
+      .sheet{
+        width:297mm;
+        height:210mm;
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+      }
+      .page{
+        width:148.5mm;
+        height:210mm;
+        margin:0;
+        box-shadow:none;
+        overflow:visible;
+        page-break-after:avoid;
+      }
+    }
+  
 .autocomplete-box{
 position:absolute;
 background:#fff;
@@ -221,127 +221,127 @@ Remember:
 
 <!-- Page 1: Invoice -->
 <div class="page" id="invoicePage">
-    <div class="header">
-        <div class="ganesha">ॐ श्री गणेशाय नमः</div>
-        <div class="contact">
-            SANJAY LULLA<br>
-            +91-9922949888
-        </div>
+  <div class="header">
+    <div class="ganesha">ॐ श्री गणेशाय नमः</div>
+    <div class="contact">
+      SANJAY LULLA<br>
+      +91-9922949888
     </div>
+  </div>
 
-    <div class="title">
-        <h1>SAI DYERS</h1>
-    </div>
-    <div class="subtitle">
-        ALL TYPES OF GARMENT PROCESS
-    </div>
+  <div class="title">
+    <h1>SAI DYERS</h1>
+  </div>
+  <div class="subtitle">
+    ALL TYPES OF GARMENT PROCESS
+  </div>
 
-    <div class="info">
-        <div class="info-field" style="align-self:flex-end;">
-            <label for="partyname">Party Name:</label>
-            <input type="text" id="partyname" list="partyList" placeholder="Enter Party Name" style="text-align:left; padding-left:1px;">
-            <datalist id="partyList">
-                <option value="Speed Garment">
-                <option value="Blacklee Garment">
-                <option value="M. Tolaram &amp; Co.">
-                <option value="Lemon Garment">
-                <option value="Sozer Garment">
-                <option value="H2 Garment">
-            </datalist>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;">
-            <div class="info-field">
-                <label for="billno">Bill No:</label>
-                <input type="text" id="billno" placeholder="1" maxlength="4"
+  <div class="info">
+    <div class="info-field" style="align-self:flex-end;">
+      <label for="partyname">Party Name:</label>
+      <input type="text" id="partyname" list="partyList" placeholder="Enter Party Name" style="text-align:left; padding-left:1px;">
+      <datalist id="partyList">
+        <option value="Speed Garment">
+        <option value="Blacklee Garment">
+        <option value="M. Tolaram &amp; Co.">
+        <option value="Lemon Garment">
+        <option value="Sozer Garment">
+        <option value="H2 Garment">
+      </datalist>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;">
+      <div class="info-field">
+        <label for="billno">Bill No:</label>
+        <input type="text" id="billno" placeholder="1" maxlength="4"
 style="width:48px; text-align:left; padding-left:1px;"
 inputmode="numeric"
 pattern="[0-9]*"
  oninput="filterBillNo(this)">
-            </div>
-            <div class="info-field">
-                <label for="date">Date:</label>
-                <input type="date" id="date">
-            </div>
-        </div>
+      </div>
+      <div class="info-field">
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+      </div>
     </div>
+  </div>
 
-    <table>
-        <colgroup>
-            <col class="sr">
-            <col class="item">
-            <col class="qty">
-            <col class="rate">
-            <col class="amount">
-        </colgroup>
-        <tr>
-            <th>Sr No.</th>
-            <th>Item Name</th>
-            <th>Qty.</th>
-            <th>Rate</th>
-            <th>Amount</th>
-        </tr>
-        <tbody id="tableBody">
-        </tbody>
-        <tr>
-            <td colspan="2"></td>
-            <td colspan="2"><strong>Total Amount</strong></td>
-            <td><input type="tel" id="total" readonly></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="vertical-align:top;padding:8px;text-align:left;">
-                <div style="display:flex;align-items:center;gap:4px;margin-bottom:10px;font-size:13px;">
-                    <label>Maker:</label>
-                    <input type="text" id="maker" style="flex:1;border:none;text-align:left;font-size:13px;font-family:Arial,sans-serif;">
-                </div>
-                <div style="display:flex;align-items:center;gap:4px;font-size:13px;">
-                    <label>Packer:</label>
-                    <input type="text" id="packer" style="flex:1;border:none;text-align:left;font-size:13px;font-family:Arial,sans-serif;">
-                </div>
-            </td>
-            <td colspan="3" class="signature">
-                <div style="height:60px;"></div>
-                <span style="font-size:11px;font-weight:600;">&nbsp;</span><br>
-                <span style="font-weight:700;font-size:13px;">Received Signature</span>
-            </td>
-        </tr>
-    
+  <table>
+    <colgroup>
+      <col class="sr">
+      <col class="item">
+      <col class="qty">
+      <col class="rate">
+      <col class="amount">
+    </colgroup>
+    <tr>
+      <th>Sr No.</th>
+      <th>Item Name</th>
+      <th>Qty.</th>
+      <th>Rate</th>
+      <th>Amount</th>
+    </tr>
+    <tbody id="tableBody">
+    </tbody>
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="2"><strong>Total Amount</strong></td>
+      <td><input type="tel" id="total" readonly></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="vertical-align:top;padding:8px;text-align:left;">
+        <div style="display:flex;align-items:center;gap:4px;margin-bottom:10px;font-size:13px;">
+          <label>Maker:</label>
+          <input type="text" id="maker" style="flex:1;border:none;text-align:left;font-size:13px;font-family:Arial,sans-serif;">
+        </div>
+        <div style="display:flex;align-items:center;gap:4px;font-size:13px;">
+          <label>Packer:</label>
+          <input type="text" id="packer" style="flex:1;border:none;text-align:left;font-size:13px;font-family:Arial,sans-serif;">
+        </div>
+      </td>
+      <td colspan="3" class="signature">
+        <div style="height:60px;"></div>
+        <span style="font-size:11px;font-weight:600;">&nbsp;</span><br>
+        <span style="font-weight:700;font-size:13px;">Received Signature</span>
+      </td>
+    </tr>
+  
 
 
 </table>
 </div>
 <div class="page" id="invoicePageCopy">
 
-    <div class="header">
-        <div class="ganesha">ॐ श्री गणेशाय नमः</div>
-        <div class="contact">
-            SANJAY LULLA<br>
-            +91-9922949888
-        </div>
+  <div class="header">
+    <div class="ganesha">ॐ श्री गणेशाय नमः</div>
+    <div class="contact">
+      SANJAY LULLA<br>
+      +91-9922949888
     </div>
+  </div>
 
-    <div class="title">
-        <h1>SAI DYERS</h1>
-    </div>
-    <div class="subtitle">
-        ALL TYPES OF GARMENT PROCESS
-    </div>
+  <div class="title">
+    <h1>SAI DYERS</h1>
+  </div>
+  <div class="subtitle">
+    ALL TYPES OF GARMENT PROCESS
+  </div>
 
-    <div class="info">
-        <div class="info-field" style="align-self:flex-end;">
-            <label>Party Name:</label>
-            <input type="text" id="partynameCopy" placeholder="Enter Party Name" style="text-align:left; padding-left:1px;" readonly>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;">
-            <div class="info-field">
-                <label>Bill No:</label>
-                <input type="text" id="billnoCopy" style="width:48px; text-align:left; padding-left:1px;" readonly>
-            </div>
-            <div class="info-field">
-                <label>Date:</label>
-                <input type="date" id="dateCopy" readonly>
-            </div>
-        </div>
+  <div class="info">
+    <div class="info-field" style="align-self:flex-end;">
+      <label>Party Name:</label>
+      <input type="text" id="partynameCopy" placeholder="Enter Party Name" style="text-align:left; padding-left:1px;" readonly>
     </div>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;">
+      <div class="info-field">
+        <label>Bill No:</label>
+        <input type="text" id="billnoCopy" style="width:48px; text-align:left; padding-left:1px;" readonly>
+      </div>
+      <div class="info-field">
+        <label>Date:</label>
+        <input type="date" id="dateCopy" readonly>
+      </div>
+    </div>
+  </div>
 
 <table>
 <colgroup>
@@ -486,8 +486,8 @@ pattern="[0-9]*"
 </td>
 <td colspan="3" class="signature">
 <div style="height:60px;"></div>
-                <span style="font-size:11px;font-weight:600;">&nbsp;</span><br>
-                <span style="font-weight:700;font-size:13px;">Received Signature</span>
+        <span style="font-size:11px;font-weight:600;">&nbsp;</span><br>
+        <span style="font-weight:700;font-size:13px;">Received Signature</span>
 </td>
 </tr>
 </table>
@@ -498,24 +498,28 @@ pattern="[0-9]*"
 
 <div class="buttons" style="margin:20px;text-align:center;">
 <button id="downloadPdfBtn" onclick="savePDF()" style="padding:10px 18px;font-size:16px;cursor:pointer;">📄 Download PDF</button>
-<button id="connectDriveBtn" onclick="connectGoogleDrive()" style="padding:10px 18px;font-size:16px;cursor:pointer;margin-left:10px;">☁️ Connect Google Drive</button><div id="driveStatus" style="margin-top:10px;font-weight:bold;color:#b00020;">🔴 Google Drive: Not Connected</div>
+<button id="connectDriveBtn" onclick="connectGoogleDrive()" style="padding:10px 18px;font-size:16px;cursor:pointer;margin-left:10px;">☁️ Connect Google Drive</button>
+<button onclick="savePDFToDrive()" style="padding:10px 18px;font-size:16px;cursor:pointer;margin-left:10px;">☁️ Save PDF to Drive</button>
+
+
+<div id="driveStatus" style="margin-top:10px;font-weight:bold;color:#b00020;">🔴 Google Drive: Not Connected</div>
 
 <script>
-    const tableBody = document.getElementById('tableBody');
+  const tableBody = document.getElementById('tableBody');
 
-    for (let i = 1; i <= 15; i++) {
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${i}</td>
-            <td>
+  for (let i = 1; i <= 15; i++) {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${i}</td>
+      <td>
 <input type="text" name="item">
 </td>
-            <td><input type="tel" name="qty" oninput="calculateAmount(this)"></td>
-            <td><input type="tel" name="rate" oninput="calculateAmount(this)"></td>
-            <td><input type="tel" name="amount" readonly></td>
-        `;
-        tableBody.appendChild(row);
-    }
+      <td><input type="tel" name="qty" oninput="calculateAmount(this)"></td>
+      <td><input type="tel" name="rate" oninput="calculateAmount(this)"></td>
+      <td><input type="tel" name="amount" readonly></td>
+    `;
+    tableBody.appendChild(row);
+  }
 
 const r1=tableBody.rows[0];
 if(r1){
@@ -529,24 +533,24 @@ for(let i=2;i<=15;i++){
  if(r){r.querySelector('[name="item"]').id='item'+i;r.querySelector('[name="qty"]').id='qty'+i;r.querySelector('[name="rate"]').id='rate'+i;r.querySelector('[name="amount"]').id='amount'+i;}
 }
 
-    function calculateAmount(input) {
-        const row = input.closest('tr');
-        const qty = parseFloat(row.querySelector('[name="qty"]').value) || 0;
-        const rate = parseFloat(row.querySelector('[name="rate"]').value) || 0;
-        const amount = qty * rate;
-        row.querySelector('[name="amount"]').value = amount.toFixed(2);
-        calculateTotal();
-    }
+  function calculateAmount(input) {
+    const row = input.closest('tr');
+    const qty = parseFloat(row.querySelector('[name="qty"]').value) || 0;
+    const rate = parseFloat(row.querySelector('[name="rate"]').value) || 0;
+    const amount = qty * rate;
+    row.querySelector('[name="amount"]').value = amount.toFixed(2);
+    calculateTotal();
+  }
 
-    function calculateTotal() {
-        let total = 0;
-        document.querySelectorAll('[name="amount"]').forEach(input => {
-            total += parseFloat(input.value) || 0;
-        });
-        document.getElementById('total').value = total.toFixed(2);
-    }
+  function calculateTotal() {
+    let total = 0;
+    document.querySelectorAll('[name="amount"]').forEach(input => {
+      total += parseFloat(input.value) || 0;
+    });
+    document.getElementById('total').value = total.toFixed(2);
+  }
 
-    
+  
 
 const itemSuggestions=[
 "dx jeera","stone jeera","black jeera","blue jeera","grey jeera","bottle green",
@@ -561,20 +565,20 @@ function attachAutocomplete(inp){
  inp.parentElement.appendChild(box);
 
  inp.addEventListener('input',()=>{
-   const v=inp.value.toLowerCase();
-   box.innerHTML='';
-   if(!v){box.style.display='none';return;}
-   itemSuggestions.filter(x=>x.toLowerCase().includes(v)).forEach(x=>{
-      const d=document.createElement('div');
-      d.className='autocomplete-item';
-      d.textContent=x;
-      d.onclick=()=>{inp.value=x;inp.dispatchEvent(new Event("input",{bubbles:true}));box.style.display="none";};
-      box.appendChild(d);
-   });
-   if(box.children.length){
-      box.style.display='block';
-      box.style.width=inp.offsetWidth+'px';
-   }else box.style.display='none';
+  const v=inp.value.toLowerCase();
+  box.innerHTML='';
+  if(!v){box.style.display='none';return;}
+  itemSuggestions.filter(x=>x.toLowerCase().includes(v)).forEach(x=>{
+   const d=document.createElement('div');
+   d.className='autocomplete-item';
+   d.textContent=x;
+   d.onclick=()=>{inp.value=x;inp.dispatchEvent(new Event("input",{bubbles:true}));box.style.display="none";};
+   box.appendChild(d);
+  });
+  if(box.children.length){
+   box.style.display='block';
+   box.style.width=inp.offsetWidth+'px';
+  }else box.style.display='none';
  });
  inp.addEventListener('blur',()=>setTimeout(()=>box.style.display='none',150));
 }
@@ -583,48 +587,48 @@ document.querySelectorAll('input[name="item"]').forEach(attachAutocomplete);
 
 
 function filterBillNo(e){
-  e.value=e.value.replace(/[^0-9]/g,'').slice(0,4);
+ e.value=e.value.replace(/[^0-9]/g,'').slice(0,4);
 }
 
 
 const party=document.getElementById("partyname");
 const partyCopy=document.getElementById("partynameCopy");
 if(party && partyCopy){
-  party.addEventListener("input",()=>partyCopy.value=party.value);
+ party.addEventListener("input",()=>partyCopy.value=party.value);
 }
 
 
 const bill=document.getElementById("billno");
 const billCopy=document.getElementById("billnoCopy");
 if(bill && billCopy){
-  bill.addEventListener("input",()=>billCopy.value=bill.value);
+ bill.addEventListener("input",()=>billCopy.value=bill.value);
 }
 
 
 const dateField=document.getElementById("date");
 const dateCopy=document.getElementById("dateCopy");
 if(dateField && dateCopy){
-  dateField.addEventListener("input",()=>dateCopy.value=dateField.value);
+ dateField.addEventListener("input",()=>dateCopy.value=dateField.value);
 }
 
 
 const maker=document.getElementById("maker");
 const makerCopy=document.getElementById("makerCopy");
 if(maker&&makerCopy){
-  maker.addEventListener("input",()=>makerCopy.value=maker.value);
+ maker.addEventListener("input",()=>makerCopy.value=maker.value);
 }
 const packer=document.getElementById("packer");
 const packerCopy=document.getElementById("packerCopy");
 if(packer&&packerCopy){
-  packer.addEventListener("input",()=>packerCopy.value=packer.value);
+ packer.addEventListener("input",()=>packerCopy.value=packer.value);
 }
 
 
 function mirrorValue(a,b){
  const x=document.getElementById(a),y=document.getElementById(b);
  if(x&&y){
-   x.addEventListener('input',()=>y.value=x.value);
-   y.value=x.value;
+  x.addEventListener('input',()=>y.value=x.value);
+  y.value=x.value;
  }
 }
 mirrorValue('item1','item1Copy');
@@ -644,8 +648,8 @@ for(let i=2;i<=15;i++){
 }
 setInterval(()=>{
  for(let i=2;i<=15;i++){
-  let a=document.getElementById('amount'+i),b=document.getElementById('amount'+i+'Copy');
-  if(a&&b) b.value=a.value;
+ let a=document.getElementById('amount'+i),b=document.getElementById('amount'+i+'Copy');
+ if(a&&b) b.value=a.value;
  }
 },100);
 
@@ -659,11 +663,11 @@ setInterval(()=>{
 
 const copyPage=document.getElementById('invoicePageCopy');
 if(copyPage){
-  copyPage.querySelectorAll('input,select,textarea').forEach(el=>{
-    el.tabIndex=-1;
-    el.addEventListener('focus',e=>document.getElementById('partyname').focus());
-    el.style.pointerEvents='none';
-  });
+ copyPage.querySelectorAll('input,select,textarea').forEach(el=>{
+  el.tabIndex=-1;
+  el.addEventListener('focus',e=>document.getElementById('partyname').focus());
+  el.style.pointerEvents='none';
+ });
 }
 
 
@@ -673,60 +677,591 @@ const GOOGLE_CLIENT_ID="311997920774-mpo66cfn1qqi7v75aaf7fmhr3lmsk5tu.apps.googl
 let tokenClient=null;
 
 window.addEventListener('load',()=>{
-  if(window.google && google.accounts && google.accounts.oauth2){
-    tokenClient=google.accounts.oauth2.initTokenClient({
-      client_id: GOOGLE_CLIENT_ID,
-      scope:'https://www.googleapis.com/auth/drive.file',
-      callback:(resp)=>{
-        console.log(resp);
-        document.getElementById('driveStatus').textContent='🟢 Google Drive: Token received';
-        document.getElementById('driveStatus').style.color='green';
-      }
-    });
-  }
+ if(window.google && google.accounts && google.accounts.oauth2){
+  tokenClient=google.accounts.oauth2.initTokenClient({
+   client_id: GOOGLE_CLIENT_ID,
+   scope:'https://www.googleapis.com/auth/drive.file',
+   callback:(resp)=>{
+  console.log(resp);
+  window.accessToken = resp.access_token;
+  document.getElementById('driveStatus').textContent='🟢 Google Drive: Connected';
+    document.getElementById('driveStatus').style.color='green';
+   }
+  });
+ }
 });
 
 function connectGoogleDrive(){
-  if(!window.google || !google.accounts){
-    alert('Google Identity Services did not load.');
-    return;
-  }
-  if(!tokenClient){
-    alert('Authentication is still initializing. Refresh once and try again.');
-    return;
-  }
-  tokenClient.requestAccessToken({prompt:'consent'});
+ if(!window.google || !google.accounts){
+  alert('Google Identity Services did not load.');
+  return;
+ }
+ if(!tokenClient){
+  alert('Authentication is still initializing. Refresh once and try again.');
+  return;
+ }
+ tokenClient.requestAccessToken({prompt:'select_account'});
 }
 
 async function savePDF(){
+
  const btn=document.getElementById('downloadPdfBtn');
  if(btn) btn.style.display='none';
+
  try{
-   const sheet=document.querySelector('.sheet');
-   const canvas=await html2canvas(sheet,{scale:2,backgroundColor:'#ffffff',useCORS:true});
-   const img=canvas.toDataURL('image/png');
-   const {jsPDF}=window.jspdf;
-   const pdf=new jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
-   pdf.addImage(img,'PNG',0,0,297,210);
-   const bill=(document.getElementById('billno').value||'Bill').trim();
-   const party=(document.getElementById('partyname').value||'Unknown Party').trim().replace(/[\\/:*?"<>|]/g,'');
-   let ds='No Date';
-   const dv=document.getElementById('date').value;
-   if(dv){const [y,m,d]=dv.split('-'); ds=`${d}-${m}-${y}`;}
-   pdf.save(`${bill} - ${party} - ${ds}.pdf`);
+
+  const sheet=document.querySelector('.sheet');
+  const canvas=await html2canvas(sheet,{scale:2,backgroundColor:'#ffffff',useCORS:true});
+  const img=canvas.toDataURL('image/png');
+
+  const {jsPDF}=window.jspdf;
+  const pdf=new jsPDF({orientation:'landscape',unit:'mm',format:'a4'});
+  pdf.addImage(img,'PNG',0,0,297,210);
+
+  const bill=(document.getElementById('billno').value||'Bill').trim();
+  const party=(document.getElementById('partyname').value||'Unknown').trim();
+
+  let ds='No Date';
+  const dv=document.getElementById('date').value;
+  if(dv){
+   const [y,m,d]=dv.split('-');
+   ds=`${d}-${m}-${y}`;
+  }
+
+  const pdfBlob = pdf.output("blob");
+  const fileName = `${bill} - ${party} - ${ds}.pdf`;
+
+  await uploadPDFToDrive(pdfBlob, fileName, ds, party);
+
  }catch(e){
-   console.error(e);
-   alert('PDF generation failed. Check console.');
+  console.error(e);
+  alert('PDF generation failed. Check console.');
  }finally{
-   if(btn) btn.style.display='';
+  if(btn) btn.style.display='';
  }
 }
 
+
+
+window.uploadTestFile = async function () {
+  try {
+    if (!window.accessToken) {
+      alert("Please connect Google Drive first.");
+      return;
+    }
+
+    const fileContent = "Hello from Sai Dyers Billing!";
+
+    const metadata = {
+      name: "hello.txt",
+      mimeType: "text/plain"
+    };
+
+    const form = new FormData();
+    form.append("metadata", new Blob([JSON.stringify(metadata)], {
+      type: "application/json"
+    }));
+    form.append("file", new Blob([fileContent], {
+      type: "text/plain"
+    }));
+
+    const res = await fetch(
+      "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart",
+      {
+        method: "POST",
+        headers: {
+          Authorization: "Bearer " + window.accessToken
+        },
+        body: form
+      }
+    );
+
+    const data = await res.json();
+    console.log("UPLOAD:", data);
+
+    if (res.ok && data.id) {
+
+      await fetch(`https://www.googleapis.com/drive/v3/files/${data.id}/permissions`, {
+        method: "POST",
+        headers: {
+          Authorization: "Bearer " + window.accessToken,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          type: "anyone",
+          role: "reader"
+        })
+      });
+
+      const link = `https://drive.google.com/file/d/${data.id}/view`;
+      alert("Uploaded Successfully!\n" + link);
+      window.open(link, "_blank");
+
+    } else {
+      alert("Upload failed");
+    }
+
+  } catch (e) {
+    console.error(e);
+    alert("Upload error");
+  }
+};
+
+
+window.disconnectGoogleDrive = function(){
+  window.accessToken = null;
+  const el = document.getElementById('driveStatus');
+  if(el){
+    el.textContent = '🔴 Google Drive: Not Connected';
+    el.style.color = 'red';
+  }
+};
+
+
+async function createFolder(name, parentId = null) {
+  const meta = {name, mimeType:"application/vnd.google-apps.folder"};
+  if(parentId) meta.parents=[parentId];
+
+  const res = await fetch("https://www.googleapis.com/drive/v3/files",{
+    method:"POST",
+    headers:{
+      Authorization:"Bearer "+window.accessToken,
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify(meta)
+  });
+
+  const data = await res.json();
+  return data.id;
+}
+
+async function uploadHTMLToDrive(htmlContent,fileName,date,party){
+
+  if(!window.accessToken){
+    alert("Connect Drive first");
+    return;
+  }
+
+  const main = await createFolder("Sai Dyers Bills");
+  const htmlFolder = await createFolder("HTML Bills", main);
+  const dateFolder = await createFolder(date, htmlFolder);
+  const partyFolder = await createFolder(party, dateFolder);
+
+  const blob = new Blob([htmlContent],{type:"text/html"});
+  const form = new FormData();
+
+  const meta = {
+    name:fileName,
+    parents:[partyFolder],
+    mimeType:"text/html"
+  };
+
+  form.append("metadata", new Blob([JSON.stringify(meta)],{type:"application/json"}));
+  form.append("file", blob);
+
+  const res = await fetch("https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart",{
+    method:"POST",
+    headers:{Authorization:"Bearer "+window.accessToken},
+    body:form
+  });
+
+  const data = await res.json();
+  if(res.ok && data.id){
+    const link=`https://drive.google.com/file/d/${data.id}/view`;
+    alert("HTML Uploaded\n"+link);
+    window.open(link,"_blank");
+  } else {
+    alert("Upload failed");
+  }
+}
+
+async function uploadCurrentHTML(){
+  const htmlContent=document.documentElement.outerHTML;
+
+  const bill=document.getElementById("billno").value||"Bill";
+  const party=document.getElementById("partyname").value||"Unknown";
+
+  let ds="No Date";
+  const dv=document.getElementById("date").value;
+  if(dv){const [y,m,d]=dv.split("-"); ds=`${d}-${m}-${y}`;}
+
+  const fileName=`${bill} - ${party} - ${ds}.html`;
+
+  await uploadHTMLToDrive(htmlContent,fileName,ds,party);
+}
 
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<script>
+async function createFolder(name, parentId=null){
+ const res = await fetch("https://www.googleapis.com/drive/v3/files",{
+  method:"POST",
+  headers:{
+   Authorization:"Bearer "+window.accessToken,
+   "Content-Type":"application/json"
+  },
+  body:JSON.stringify({
+   name:name,
+   mimeType:"application/vnd.google-apps.folder",
+   parents: parentId ? [parentId] : undefined
+  })
+ });
+ return (await res.json()).id;
+}
+
+ const main = await createFolder("Sai Dyers Bills");
+ const d = await createFolder(date, main);
+ const p = await createFolder(party, d);
+
+ const form = new FormData();
+
+ form.append("metadata", new Blob([JSON.stringify({
+  name:fileName,
+  parents:[p],
+  mimeType:"application/pdf"
+ })],{type:"application/json"}));
+
+ form.append("file", blob);
+
+ const res = await fetch("https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart",{
+  method:"POST",
+  headers:{Authorization:"Bearer "+window.accessToken},
+  body:form
+ });
+
+ const data = await res.json();
+
+ if(res.ok && data.id){
+  alert("Uploaded successfully!");
+  window.open("https://drive.google.com/file/d/"+data.id+"/view","_blank");
+ } else {
+  alert("Upload failed");
+  console.log(data);
+ }
+}
+
+
+</script>
+
+
+<script>
+async function createFolder(name, parentId=null){
+ const res = await fetch("https://www.googleapis.com/drive/v3/files",{
+  method:"POST",
+  headers:{
+   Authorization:"Bearer "+window.accessToken,
+   "Content-Type":"application/json"
+  },
+  body:JSON.stringify({
+   name:name,
+   mimeType:"application/vnd.google-apps.folder",
+   parents: parentId ? [parentId] : undefined
+  })
+ });
+ return (await res.json()).id;
+}
+
+ const main = await createFolder("Sai Dyers Bills");
+ const d = await createFolder(date, main);
+ const p = await createFolder(party, d);
+
+ const form = new FormData();
+ form.append("metadata", new Blob([JSON.stringify({
+  name:fileName,
+  parents:[p],
+  mimeType:"application/pdf"
+ })],{type:"application/json"}));
+ form.append("file", blob);
+
+ const res = await fetch("https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart",{
+  method:"POST",
+  headers:{Authorization:"Bearer "+window.accessToken},
+  body:form
+ });
+
+ const data = await res.json();
+ if(res.ok && data.id){
+  alert("Uploaded to Drive");
+  window.open("https://drive.google.com/file/d/"+data.id+"/view","_blank");
+ } else {
+  alert("Upload failed");
+  console.log(data);
+ }
+}
+
+
+</script>
+
+
+<script>
+// FINAL OVERRIDE FIX - prevents duplicate folders WITHOUT changing layout
+async function __getOrCreateFolder(name, parentId=null){
+  try{
+    let q = "mimeType='application/vnd.google-apps.folder' and name='"+name+"' and trashed=false";
+    if(parentId) q += " and '"+parentId+"' in parents";
+
+    const res = await fetch("https://www.googleapis.com/drive/v3/files?q="+encodeURIComponent(q),{
+      headers:{ Authorization:"Bearer "+window.accessToken }
+    });
+
+    const data = await res.json();
+    if(data.files && data.files.length) return data.files[0].id;
+
+    const c = await fetch("https://www.googleapis.com/drive/v3/files",{
+      method:"POST",
+      headers:{
+        Authorization:"Bearer "+window.accessToken,
+        "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+        name:name,
+        mimeType:"application/vnd.google-apps.folder",
+        parents: parentId ? [parentId] : undefined
+      })
+    });
+
+    const d = await c.json();
+    return d.id;
+  }catch(e){
+    console.error('folder error',e);
+    throw e;
+  }
+}
+
+// override ALL existing createFolder calls safely
+window.createFolder = __getOrCreateFolder;
+</script>
+
+
+<script>
+/* =========================
+   FLEX PDF PERFECT RENDERER
+   ========================= */
+
+  const original = document.querySelector('.sheet-container') || document.querySelector('.sheet') || document.body;
+
+  // clone for stable rendering
+  const clone = original.cloneNode(true);
+
+  // offscreen container
+  const wrap = document.createElement('div');
+  wrap.style.position = 'fixed';
+  wrap.style.left = '-10000px';
+  wrap.style.top = '0';
+  wrap.style.width = original.scrollWidth + 'px';
+  wrap.style.background = '#fff';
+
+  // FORCE FLEX STABILITY (CRITICAL)
+  clone.style.display = 'flex';
+  clone.style.flexWrap = 'nowrap';
+  clone.style.alignItems = 'flex-start';
+  clone.style.transform = 'none';
+  clone.style.width = '297mm';
+
+  // ensure pages don't shrink
+  const pages = clone.querySelectorAll('.page');
+  pages.forEach(p=>{
+    p.style.flex = '0 0 auto';
+    p.style.width = '148.5mm';
+    p.style.height = '210mm';
+  });
+
+  wrap.appendChild(clone);
+  document.body.appendChild(wrap);
+
+  try{
+
+    const canvas = await html2canvas(clone, {
+      scale: 2,
+      useCORS: true,
+      backgroundColor: "#ffffff",
+      scrollX: 0,
+      scrollY: 0
+    });
+
+    const img = canvas.toDataURL("image/png");
+
+    const {jsPDF} = window.jspdf;
+    const pdf = new jsPDF({orientation:"landscape",unit:"mm",format:"a4"});
+
+    pdf.addImage(img,"PNG",0,0,297,210);
+
+    const bill = (document.getElementById("billno")?.value || "Bill").trim();
+    const party = (document.getElementById("partyname")?.value || "Unknown").trim();
+
+    let dv = document.getElementById("date")?.value;
+    if(!dv){
+      dv = new Date().toISOString().slice(0,10);
+    }
+
+    const [y,m,d] = dv.split("-");
+    const ds = `${d}-${m}-${y}`;
+
+    const blob = pdf.output("blob");
+    const fileName = `${bill} - ${party} - ${ds}.pdf`;
+
+    // call existing uploader (unchanged)
+    await uploadPDFToDrive(blob, fileName, ds, party);
+
+  }catch(e){
+    console.error(e);
+    alert("PDF render failed");
+  }
+
+  document.body.removeChild(wrap);
+}
+
+</script>
+
+
+<script>
+
+/* =========================
+   FINAL DUAL DRIVE SYSTEM
+   PHYSICAL + SHORTCUT
+   ========================= */
+
+async function getFolder(name, parentId=null){
+
+  let q = "mimeType='application/vnd.google-apps.folder' and name='"+name+"' and trashed=false";
+  if(parentId) q += " and '"+parentId+"' in parents";
+
+  const res = await fetch("https://www.googleapis.com/drive/v3/files?q="+encodeURIComponent(q),{
+    headers:{ Authorization:"Bearer "+window.accessToken }
+  });
+
+  const data = await res.json();
+  if(data.files && data.files.length) return data.files[0].id;
+
+  const c = await fetch("https://www.googleapis.com/drive/v3/files",{
+    method:"POST",
+    headers:{
+      Authorization:"Bearer "+window.accessToken,
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+      name,
+      mimeType:"application/vnd.google-apps.folder",
+      parents: parentId ? [parentId] : undefined
+    })
+  });
+
+  return (await c.json()).id;
+}
+
+/* REAL UPLOAD + SHORTCUT SYSTEM */
+async function uploadPDFToDrive(blob,fileName,dateISO,party){
+
+  if(!window.accessToken){
+    alert("Connect Google Drive first");
+    return;
+  }
+
+  const [year,monthNum]=dateISO.split("-");
+  const monthNames=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const month=monthNames[parseInt(monthNum,10)-1];
+
+  // ROOTS
+  const billsRoot=await getFolder("Sai Dyers Bills");
+  const shortcutsRoot=await getFolder("Sai Dyers Shortcuts");
+
+  // Physical: Sai Dyers Bills/Year/Month/Party
+  const yFolder=await getFolder(year,billsRoot);
+  const mFolder=await getFolder(month,yFolder);
+  const pFolder=await getFolder(party,mFolder);
+
+  const form=new FormData();
+  form.append("metadata",new Blob([JSON.stringify({
+      name:fileName,
+      parents:[pFolder],
+      mimeType:"application/pdf"
+  })],{type:"application/json"}));
+  form.append("file",blob);
+
+  const upload=await fetch("https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart",{
+      method:"POST",
+      headers:{Authorization:"Bearer "+window.accessToken},
+      body:form
+  });
+
+  const file=await upload.json();
+  if(!upload.ok||!file.id){
+      console.error(file);
+      alert("PDF upload failed");
+      return;
+  }
+
+  // Shortcut: Sai Dyers Shortcuts/Party/Year/Month
+  const sp=await getFolder(party,shortcutsRoot);
+  const sy=await getFolder(year,sp);
+  const sm=await getFolder(month,sy);
+
+  const shortcut=await fetch("https://www.googleapis.com/drive/v3/files",{
+      method:"POST",
+      headers:{
+          Authorization:"Bearer "+window.accessToken,
+          "Content-Type":"application/json"
+      },
+      body:JSON.stringify({
+          name:fileName,
+          mimeType:"application/vnd.google-apps.shortcut",
+          parents:[sm],
+          shortcutDetails:{targetId:file.id}
+      })
+  });
+
+  if(!shortcut.ok){
+      console.error(await shortcut.text());
+      alert("Shortcut creation failed");
+      return;
+  }
+
+  alert("Saved successfully.");
+}
+
+/* UPDATED SAVE FUNCTION */
+async function savePDFToDrive(){
+
+  const sheet=document.querySelector('.sheet');
+  const canvas=await html2canvas(sheet,{scale:2,backgroundColor:"#fff",useCORS:true});
+  const img=canvas.toDataURL("image/png");
+
+  const {jsPDF}=window.jspdf;
+  const pdf=new jsPDF({orientation:"landscape",unit:"mm",format:"a4"});
+  pdf.addImage(img,"PNG",0,0,297,210);
+
+  const bill=(document.getElementById("billno")?.value||"Bill").trim();
+  const party=document.getElementById("partyname")?.value||"Unknown";
+
+  const dateISO=document.getElementById("date")?.value || new Date().toISOString().slice(0,10);
+
+  const [y,m,d]=dateISO.split("-");
+  const ds=`${d}-${m}-${y}`;
+
+  const blob=pdf.output("blob");
+  const fileName=`${bill} - ${party} - ${ds}.pdf`;
+
+  await uploadPDFToDrive(blob,fileName,dateISO,party);
+}
+
+</script>
+
+
+<script>
+const APPS_SCRIPT_URL="https://script.google.com/macros/s/AKfycbx_tac8zfW6w2xPQVqSey-JJiKebdT6EMEnY5el5sSHs6jbQhD-RLm-Q7j_Fb0qrzAg/exec";
+async function saveInvoiceToSheets(data){
+ const response=await fetch(APPS_SCRIPT_URL,{
+  method:"POST",
+  headers:{"Content-Type":"application/json"},
+  body:JSON.stringify(data)
+ });
+ return await response.json();
+}
+</script>
+
 </body>
 </html>
