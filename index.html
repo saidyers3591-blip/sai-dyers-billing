@@ -1,3 +1,4 @@
+<!-- https://saidyers.github.io/sai-dyers-billing/ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -109,6 +110,7 @@ table {
       background:transparent;
       box-sizing:border-box;
       text-align:center;
+      font-family: Arial, sans-serif;
     }
     .signature {
       text-align: center;
@@ -222,7 +224,7 @@ Remember:
 <!-- Page 1: Invoice -->
 <div class="page" id="invoicePage">
   <div class="header">
-    <div class="ganesha">ॐ श्री गणेशाय नमः</div>
+    <div class="ganesha">|| ॐ साईं राम ||</div>
     <div class="contact">
       SANJAY LULLA<br>
       +91-9922949888
@@ -239,7 +241,7 @@ Remember:
   <div class="info">
     <div class="info-field" style="align-self:flex-end;">
       <label for="partyname">Party Name:</label>
-      <input type="text" id="partyname" list="partyList" placeholder="Enter Party Name" style="text-align:left; padding-left:1px;">
+      <input autocomplete="off" type="text" id="partyname" list="partyList" placeholder="Enter Party Name" style="text-align:left; padding-left:1px;">
       <datalist id="partyList">
         <option value="Speed Garment">
         <option value="Blacklee Garment">
@@ -256,11 +258,12 @@ Remember:
 style="width:48px; text-align:left; padding-left:1px;"
 inputmode="numeric"
 pattern="[0-9]*"
+autocomplete="off"
  oninput="filterBillNo(this)">
       </div>
       <div class="info-field">
         <label for="date">Date:</label>
-        <input type="date" id="date">
+        <input autocomplete="off" type="date" id="date">
       </div>
     </div>
   </div>
@@ -285,17 +288,17 @@ pattern="[0-9]*"
     <tr>
       <td colspan="2"></td>
       <td colspan="2"><strong>Total Amount</strong></td>
-      <td><input type="tel" id="total" readonly></td>
+      <td><input autocomplete="off" type="tel" id="total" readonly></td>
     </tr>
     <tr>
       <td colspan="2" style="vertical-align:top;padding:8px;text-align:left;">
         <div style="display:flex;align-items:center;gap:4px;margin-bottom:10px;font-size:13px;">
           <label>Maker:</label>
-          <input type="text" id="maker" style="flex:1;border:none;text-align:left;font-size:13px;font-family:Arial,sans-serif;">
+          <input autocomplete="off" type="text" id="maker" style="flex:1;border:none;text-align:left;font-size:13px;font-family:Arial,sans-serif;">
         </div>
         <div style="display:flex;align-items:center;gap:4px;font-size:13px;">
           <label>Packer:</label>
-          <input type="text" id="packer" style="flex:1;border:none;text-align:left;font-size:13px;font-family:Arial,sans-serif;">
+          <input autocomplete="off" type="text" id="packer" style="flex:1;border:none;text-align:left;font-size:13px;font-family:Arial,sans-serif;">
         </div>
       </td>
       <td colspan="3" class="signature">
@@ -312,7 +315,7 @@ pattern="[0-9]*"
 <div class="page" id="invoicePageCopy">
 
   <div class="header">
-    <div class="ganesha">ॐ श्री गणेशाय नमः</div>
+    <div class="ganesha">|| ॐ साईं राम ||</div>
     <div class="contact">
       SANJAY LULLA<br>
       +91-9922949888
@@ -329,16 +332,16 @@ pattern="[0-9]*"
   <div class="info">
     <div class="info-field" style="align-self:flex-end;">
       <label>Party Name:</label>
-      <input type="text" id="partynameCopy" placeholder="Enter Party Name" style="text-align:left; padding-left:1px;" readonly>
+      <input autocomplete="off" type="text" id="partynameCopy" placeholder="Enter Party Name" style="text-align:left; padding-left:1px;" readonly>
     </div>
     <div style="display:flex;flex-direction:column;align-items:flex-end;">
       <div class="info-field">
         <label>Bill No:</label>
-        <input type="text" id="billnoCopy" style="width:48px; text-align:left; padding-left:1px;" readonly>
+        <input autocomplete="off" type="text" id="billnoCopy" style="width:48px; text-align:left; padding-left:1px;" readonly>
       </div>
       <div class="info-field">
         <label>Date:</label>
-        <input type="date" id="dateCopy" readonly>
+        <input autocomplete="off" type="date" id="dateCopy" readonly>
       </div>
     </div>
   </div>
@@ -363,125 +366,125 @@ pattern="[0-9]*"
 
 <tr>
 <td>1</td>
-<td><input type="text" id="item1Copy" readonly></td>
-<td><input type="text" id="qty1Copy" readonly></td>
-<td><input type="text" id="rate1Copy" readonly></td>
-<td><input type="text" id="amount1Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item1Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty1Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate1Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount1Copy" readonly></td>
 </tr>
 <tr>
 <td>2</td>
-<td><input type="text" id="item2Copy" readonly></td>
-<td><input type="text" id="qty2Copy" readonly></td>
-<td><input type="text" id="rate2Copy" readonly></td>
-<td><input type="text" id="amount2Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item2Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty2Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate2Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount2Copy" readonly></td>
 </tr>
 <tr>
 <td>3</td>
-<td><input type="text" id="item3Copy" readonly></td>
-<td><input type="text" id="qty3Copy" readonly></td>
-<td><input type="text" id="rate3Copy" readonly></td>
-<td><input type="text" id="amount3Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item3Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty3Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate3Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount3Copy" readonly></td>
 </tr>
 <tr>
 <td>4</td>
-<td><input type="text" id="item4Copy" readonly></td>
-<td><input type="text" id="qty4Copy" readonly></td>
-<td><input type="text" id="rate4Copy" readonly></td>
-<td><input type="text" id="amount4Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item4Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty4Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate4Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount4Copy" readonly></td>
 </tr>
 <tr>
 <td>5</td>
-<td><input type="text" id="item5Copy" readonly></td>
-<td><input type="text" id="qty5Copy" readonly></td>
-<td><input type="text" id="rate5Copy" readonly></td>
-<td><input type="text" id="amount5Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item5Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty5Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate5Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount5Copy" readonly></td>
 </tr>
 <tr>
 <td>6</td>
-<td><input type="text" id="item6Copy" readonly></td>
-<td><input type="text" id="qty6Copy" readonly></td>
-<td><input type="text" id="rate6Copy" readonly></td>
-<td><input type="text" id="amount6Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item6Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty6Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate6Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount6Copy" readonly></td>
 </tr>
 <tr>
 <td>7</td>
-<td><input type="text" id="item7Copy" readonly></td>
-<td><input type="text" id="qty7Copy" readonly></td>
-<td><input type="text" id="rate7Copy" readonly></td>
-<td><input type="text" id="amount7Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item7Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty7Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate7Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount7Copy" readonly></td>
 </tr>
 <tr>
 <td>8</td>
-<td><input type="text" id="item8Copy" readonly></td>
-<td><input type="text" id="qty8Copy" readonly></td>
-<td><input type="text" id="rate8Copy" readonly></td>
-<td><input type="text" id="amount8Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item8Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty8Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate8Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount8Copy" readonly></td>
 </tr>
 <tr>
 <td>9</td>
-<td><input type="text" id="item9Copy" readonly></td>
-<td><input type="text" id="qty9Copy" readonly></td>
-<td><input type="text" id="rate9Copy" readonly></td>
-<td><input type="text" id="amount9Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item9Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty9Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate9Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount9Copy" readonly></td>
 </tr>
 <tr>
 <td>10</td>
-<td><input type="text" id="item10Copy" readonly></td>
-<td><input type="text" id="qty10Copy" readonly></td>
-<td><input type="text" id="rate10Copy" readonly></td>
-<td><input type="text" id="amount10Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item10Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty10Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate10Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount10Copy" readonly></td>
 </tr>
 <tr>
 <td>11</td>
-<td><input type="text" id="item11Copy" readonly></td>
-<td><input type="text" id="qty11Copy" readonly></td>
-<td><input type="text" id="rate11Copy" readonly></td>
-<td><input type="text" id="amount11Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item11Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty11Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate11Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount11Copy" readonly></td>
 </tr>
 <tr>
 <td>12</td>
-<td><input type="text" id="item12Copy" readonly></td>
-<td><input type="text" id="qty12Copy" readonly></td>
-<td><input type="text" id="rate12Copy" readonly></td>
-<td><input type="text" id="amount12Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item12Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty12Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate12Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount12Copy" readonly></td>
 </tr>
 <tr>
 <td>13</td>
-<td><input type="text" id="item13Copy" readonly></td>
-<td><input type="text" id="qty13Copy" readonly></td>
-<td><input type="text" id="rate13Copy" readonly></td>
-<td><input type="text" id="amount13Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item13Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty13Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate13Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount13Copy" readonly></td>
 </tr>
 <tr>
 <td>14</td>
-<td><input type="text" id="item14Copy" readonly></td>
-<td><input type="text" id="qty14Copy" readonly></td>
-<td><input type="text" id="rate14Copy" readonly></td>
-<td><input type="text" id="amount14Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item14Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty14Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate14Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount14Copy" readonly></td>
 </tr>
 <tr>
 <td>15</td>
-<td><input type="text" id="item15Copy" readonly></td>
-<td><input type="text" id="qty15Copy" readonly></td>
-<td><input type="text" id="rate15Copy" readonly></td>
-<td><input type="text" id="amount15Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="item15Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="qty15Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="rate15Copy" readonly></td>
+<td><input autocomplete="off" type="text" id="amount15Copy" readonly></td>
 </tr>
 
 <tr>
 <td colspan="2"></td>
 <td colspan="2"><strong>Total Amount</strong></td>
-<td><input type="text" id="totalCopy" readonly></td>
+<td><input autocomplete="off" type="text" id="totalCopy" readonly></td>
 </tr>
 
 <tr>
 <td colspan="2" style="vertical-align:top;padding:8px;text-align:left;">
 <div style="display:flex;align-items:center;gap:4px;margin-bottom:10px;font-size:13px;">
 <label>Maker:</label>
-<input type="text" id="makerCopy" style="flex:1;border:none;text-align:left;font-size:13px;" readonly>
+<input autocomplete="off" type="text" id="makerCopy" style="flex:1;border:none;text-align:left;font-size:13px;" readonly>
 </div>
 <div style="display:flex;align-items:center;gap:4px;font-size:13px;">
 <label>Packer:</label>
-<input type="text" id="packerCopy" style="flex:1;border:none;text-align:left;font-size:13px;" readonly>
+<input autocomplete="off" type="text" id="packerCopy" style="flex:1;border:none;text-align:left;font-size:13px;" readonly>
 </div>
 </td>
 <td colspan="3" class="signature">
@@ -514,11 +517,11 @@ pattern="[0-9]*"
     row.innerHTML = `
       <td>${i}</td>
       <td>
-<input type="text" name="item">
+<input type="text" name="item" autocomplete="off">
 </td>
-      <td><input type="tel" name="qty" oninput="calculateAmount(this)"></td>
-      <td><input type="tel" name="rate" oninput="calculateAmount(this)"></td>
-      <td><input type="tel" name="amount" readonly></td>
+      <td><input autocomplete="off" type="tel" name="qty" oninput="calculateAmount(this)"></td>
+      <td><input autocomplete="off" type="tel" name="rate" oninput="calculateAmount(this)"></td>
+      <td><input autocomplete="off" type="tel" name="amount" readonly></td>
     `;
     tableBody.appendChild(row);
   }
@@ -705,6 +708,34 @@ function connectGoogleDrive(){
  tokenClient.requestAccessToken({prompt:'select_account'});
 }
 
+function __prepareCloneForSnapshot(clonedDoc){
+ const originals = document.querySelectorAll('input[type="text"], input[type="tel"]');
+ const clones = clonedDoc.querySelectorAll('input[type="text"], input[type="tel"]');
+ clones.forEach((inp, idx) => {
+  const original = originals[idx];
+  if(!original) return;
+  const cs = window.getComputedStyle(original);
+  const div = clonedDoc.createElement('div');
+  div.textContent = inp.value || '';
+  div.style.width = cs.width;
+  div.style.height = cs.height;
+  div.style.boxSizing = cs.boxSizing;
+  div.style.padding = cs.padding;
+  div.style.fontFamily = cs.fontFamily;
+  div.style.fontSize = cs.fontSize;
+  div.style.fontWeight = cs.fontWeight;
+  div.style.lineHeight = 'normal';
+  div.style.textAlign = cs.textAlign;
+  div.style.display = 'flex';
+  div.style.alignItems = 'center';
+  div.style.justifyContent = cs.textAlign === 'left' ? 'flex-start' : 'center';
+  div.style.background = 'transparent';
+  div.style.whiteSpace = 'pre';
+  div.style.overflow = 'visible';
+  if(inp.parentNode) inp.parentNode.replaceChild(div, inp);
+ });
+}
+
 async function savePDF(){
 
  const btn=document.getElementById('downloadPdfBtn');
@@ -713,7 +744,7 @@ async function savePDF(){
  try{
 
   const sheet=document.querySelector('.sheet');
-  const canvas=await html2canvas(sheet,{scale:2,backgroundColor:'#ffffff',useCORS:true});
+  const canvas=await html2canvas(sheet,{scale:2,backgroundColor:'#ffffff',useCORS:true,onclone:__prepareCloneForSnapshot});
   const img=canvas.toDataURL('image/png');
 
   const {jsPDF}=window.jspdf;
@@ -761,7 +792,10 @@ async function copyDataForExcel(){
   const maker=(document.getElementById('maker')?.value||'').trim();
   const packer=(document.getElementById('packer')?.value||'').trim();
 
-  const row=[party,bill,ds,total,maker,packer].join('\t');
+  const balance='';
+  const pdfLink='';
+
+  const row=[party,bill,ds,total,balance,maker,packer,pdfLink].join('\t');
 
   await navigator.clipboard.writeText(row);
 
@@ -1096,7 +1130,7 @@ async function uploadPDFToDrive(blob,fileName,dateISO,party){
 async function savePDFToDrive(){
 
   const sheet=document.querySelector('.sheet');
-  const canvas=await html2canvas(sheet,{scale:2,backgroundColor:"#fff",useCORS:true});
+  const canvas=await html2canvas(sheet,{scale:2,backgroundColor:"#fff",useCORS:true,onclone:__prepareCloneForSnapshot});
   const img=canvas.toDataURL("image/png");
 
   const {jsPDF}=window.jspdf;
