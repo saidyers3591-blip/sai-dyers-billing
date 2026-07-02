@@ -1,4 +1,4 @@
-<!-- https://saidyers.github.io/sai-dyers-billing/ -->
+<!-- your site : https://saidyers.github.io/sai-dyers-billing/ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -709,14 +709,21 @@ function connectGoogleDrive(){
 }
 
 function __prepareCloneForSnapshot(clonedDoc){
- const originals = document.querySelectorAll('input[type="text"], input[type="tel"]');
- const clones = clonedDoc.querySelectorAll('input[type="text"], input[type="tel"]');
+ const originals = document.querySelectorAll('input[type="text"], input[type="tel"], input[type="date"]');
+ const clones = clonedDoc.querySelectorAll('input[type="text"], input[type="tel"], input[type="date"]');
  clones.forEach((inp, idx) => {
   const original = originals[idx];
   if(!original) return;
   const cs = window.getComputedStyle(original);
   const div = clonedDoc.createElement('div');
-  div.textContent = inp.value || '';
+
+  let text = inp.value || '';
+  if(original.type === 'date' && text){
+   const [y,m,d] = text.split('-');
+   text = `${d}-${m}-${y}`;
+  }
+  div.textContent = text;
+
   div.style.width = cs.width;
   div.style.height = cs.height;
   div.style.boxSizing = cs.boxSizing;
@@ -732,6 +739,10 @@ function __prepareCloneForSnapshot(clonedDoc){
   div.style.background = 'transparent';
   div.style.whiteSpace = 'pre';
   div.style.overflow = 'visible';
+  div.style.borderBottom = `${cs.borderBottomWidth} ${cs.borderBottomStyle} ${cs.borderBottomColor}`;
+  div.style.borderTop = `${cs.borderTopWidth} ${cs.borderTopStyle} ${cs.borderTopColor}`;
+  div.style.borderLeft = `${cs.borderLeftWidth} ${cs.borderLeftStyle} ${cs.borderLeftColor}`;
+  div.style.borderRight = `${cs.borderRightWidth} ${cs.borderRightStyle} ${cs.borderRightColor}`;
   if(inp.parentNode) inp.parentNode.replaceChild(div, inp);
  });
 }
